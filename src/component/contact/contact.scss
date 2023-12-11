@@ -1,0 +1,185 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+    .contact-section {
+        background-color: rgb(251, 243, 237);
+        padding: 4% 0%;
+       
+
+        .contact-head {
+            text-align: center;
+            font-size: 2em;
+            color: rgb(123, 122, 122);
+        }
+
+        .contact-line {
+            display: flex;
+            justify-content: center;
+            padding: 1% 0%;
+
+            .contact-line-color {
+                width: 6%;
+                height: 2px;
+                background-color: rgb(255, 139, 7);
+            }
+        }
+
+        .contact-container {
+            // width: 60%;
+            margin: auto;
+
+            .contact-row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .contact-col1 {
+                    // width: 40%;
+                    padding: 1.5%;
+                    margin: auto;
+                    
+
+                    .contact-details {
+                        display: flex;
+                        padding: 5% 0%;
+                        width: 100%;
+                       justify-content: center;
+
+                        .contact-details-icon {
+                            color: rgb(255, 139, 7);
+                            font-size: 2em;
+                            width: 30%;
+                        }
+
+                        p {
+                            color: rgb(92, 92, 92);
+                            padding: 0% 8%;
+                            width: 70%;
+                        }
+                    }
+
+                    .contact-icons {
+                        display: flex;
+                    justify-content: space-around;
+                        padding: 5% 0%;
+                       
+                        .contact-icon-div {
+                            width: 20%;
+                            padding: 2%;
+                            border-radius: 50%;
+                            width: 50px;
+                            height: 50px;
+                            border: 4px solid rgb(251, 243, 237);
+                            padding-left: 7px;
+                            padding-top: 1.5%;
+                           background-color: rgb(46, 27, 2);
+
+                            .contact-icons-icon {
+                                
+                                font-size: 1.7em;                                                                                                       
+                                color: white;
+                            }
+                        }
+                        .contact-icon-div:hover{
+                            background-color:  rgb(255, 139, 7);
+                        }
+                    }
+                }
+
+                .contact-col2 {
+                    // width: 60%;
+                    padding: 1.5%;
+
+                    .contact-ipt{
+                        width: 90%;
+                        margin: auto;
+                        padding: 3% 0%;
+
+                        input{
+                            width: 100%;
+                            padding: 2% 2%;
+                            border: 1px solid silver;
+                        }
+                    }
+                    .contact-textarea{
+                        width: 90%;
+                        margin: auto;
+                        padding: 3% 0%;
+
+                        textarea{
+                            width: 100%;
+                            padding: 2% 2%;
+                            border: 1px solid silver;
+                        }
+                    }
+
+                    .contact-btn{
+                        text-align: center;
+                        padding: 3% 0%;
+
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            background-color: rgb(222, 99, 5);
+                            padding: 2% 4%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+// responsive
+
+@media(min-width:320px){
+.contact-section{
+    .contact-container{
+        width: 90%;
+        .contact-row{
+            .contact-col1{
+                width: 100%;
+            }
+            .contact-col2{
+                width: 100%;
+            }
+        }
+    }
+}
+}
+
+@media(min-width:660px){
+    .contact-section{
+        .contact-container{
+            width: 90%;
+            .contact-row{
+                .contact-col1{
+                    width: 80%;
+                }
+                .contact-col2{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1000px){
+    .contact-section{
+        .contact-container{
+            width: 60%;
+            .contact-row{
+                .contact-col1{
+                    width: 40%;
+                }
+                .contact-col2{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

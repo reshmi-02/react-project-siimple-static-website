@@ -1,0 +1,145 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+    .card-section{
+        background-color: rgb(251, 243, 237);
+        padding: 5% 0%;
+
+        .card-container{
+            // width: 80%;
+            margin: auto;
+
+            .card-row{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:center ;
+                
+                .card-col{
+                    // width: 33.33%;
+                    padding: 2% 1.5%;
+                    
+                   
+                    .card-card{
+                        width:100%;
+                        border-radius: 10px;
+                        background-color: white;
+                        box-shadow: 0px 0px 10px silver;
+
+                        .card-image{
+                            width: 100%;
+                            // height: 250px;
+
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 10px 10px 0px 0px;
+                            }
+                        }
+
+                        .card-content{
+                            position: relative;
+                            .card-icon{
+                                
+                                background-color: rgb(255, 139, 7);
+                                position: absolute;
+                                    top:-25px;
+                                    left:42%;
+                                    border-radius: 50%;
+                                    width: 50px;
+                                    height: 50px;
+                                    border: 4px solid white;
+                                    padding-left: 5px;
+                                    padding-top: 1.2%;
+                                .card-icons{
+                                    
+                                    font-size: 1.8em;                                                                                                       
+                                    color: white;
+                                                                                                                                                                          
+                                }
+                                
+                            }
+
+                            h3{
+                                color: rgb(176, 94, 6);
+                                text-align: center;
+                                padding-top: 10%;
+                                
+                            }
+                            h3:hover{
+                                color: rgb(255, 139, 7);
+                            }
+                            p{
+                                padding: 5% 6%;
+                                color: rgb(116, 114, 114);
+                                text-align: justify;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive
+
+
+@media(min-width:320px){
+    .card-section{
+        .card-container{
+            width: 90%;
+            .card-row{
+                .card-col{
+                    width: 100%;
+                    .card-card{
+                        .card-image{
+                            height: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:660px){
+    .card-section{
+        .card-container{
+            width: 90%;
+            .card-row{
+                .card-col{
+                    width: 85%;
+                    .card-card{
+                        .card-image{
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(min-width:1000px){
+    .card-section{
+        .card-container{
+            width: 80%;
+            .card-row{
+                .card-col{
+                    width: 33.33%;
+                    .card-card{
+                        .card-image{
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,284 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+    
+    .banner-section{
+        background: url(../../images/bg-1.jpg);
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+
+        .banner-container{
+            
+            .banner-head{
+                display: flex;
+                justify-content: space-between;
+                padding: 1%;
+                
+        
+                p{
+                    color: white;
+                    font-size: 2em;
+                }
+                .banner-open-bar:hover .banner-navbar{
+                    display: block;
+                }
+                .banner-open-bar{
+                    
+                   
+                    .banner-bar{
+                        
+                        font-size: 2em;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        padding: 2px;
+                        color: white;
+                        position:fixed;
+                        top: 2%;
+                        right:1%;
+                        
+                    }
+                    
+                }
+                .banner-navbar{
+            
+                    height: 100vh;
+                    // width: 40%;
+                    position:fixed;
+                    top: 0%;
+                    right: 0%;
+                    display: none;
+                    
+                    .navbar{
+                       
+                        
+                        .closing-icon{
+                            padding: 0% 0%;
+                            display: flex;
+                            .navbar-closing-icon{
+                                font-size: 2em;
+                                background-color: rgba(0, 0, 0, 0.4);
+                                padding: 2px;
+                                color: white;
+                            }
+                            .list{
+                                background-color: rgb(54, 52, 52);
+                                height: 100vh;
+                                width: 100%;
+                                padding: 2% 2%;
+                                
+                                .navbar-home{
+                                    text-decoration: none;
+                                    color: rgb(216, 100, 5);
+                                    font-size: 1.2em;
+                                    line-height: 2;
+                                }
+                                a{
+                                    text-decoration: none;
+                                    color: orange;
+                                    font-size: 1.2em;
+                                    line-height: 2;
+                                }
+                                .navbar-ol1{
+                                    list-style-type: none;
+                                    font-size: 1.2em;
+                                    line-height: 2;
+                                    .navbar-ol1-lists:hover .navbar-ol2{
+                                        display: block;
+                                    }
+                                    
+                                    .navbar-ol1-lists{
+                                        color: orange;
+                                       
+                                        .navbar-ol2{
+                                           
+                                            padding-left: 5%;
+                                            list-style-type: none;
+                                            display: none;
+                                            
+                                            .navbar-ol2-lists{
+                                                color: orange;
+                                                
+                                                
+                                                .navbar-ol3{
+                                                    
+                                                    padding-left: 8%;
+                                                    list-style-type: none;
+                                                    .navbar-ol3-list{
+                                                        display: none;
+                                                        color: orange;
+                                                    }
+                                                }
+                                            }
+                                            .navbar-ol2-lists:hover .navbar-ol3-list{
+                                                display: block;
+                                            }
+                                            .navbar-ol2-list{
+                                                color: orange;
+                                               
+            
+                                            }
+                                            
+                                        }
+                                    }
+                                    
+                                }
+                                
+                            }
+                        }
+                        
+                        
+                    }
+        
+        
+                }
+                .banner-open-bar:hover .banner-bar{
+                    display: none;
+                }
+                
+                
+            }
+            
+    
+            .banner-row{
+                // width: 70%;
+                display: flex;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+                height: 70vh;
+    
+                .banner-col{
+                    text-align: center;
+                    h1{
+                        font-size: 3em;
+                        padding: 1% 0%;
+                    }
+                    p{
+                        color: rgb(29, 29, 29);
+                        font-size: 1.5em;
+                        padding: 2% 0%;
+                    }
+    
+                    .banner-detail{
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 2% 0%;
+    
+                        .banner-name{
+                            width: 50%;
+                            padding: 3%;
+                            input{
+                                width: 100%;
+                                background-color: white;
+                                padding: 3% 3%;
+                                border: 1px solid white;
+                                font-size: 1em;
+                                border-radius:20px;
+                            }
+                        }
+    
+                        .banner-email{
+                            width: 50%;
+                            padding: 3%;
+    
+                            input{
+                                width: 100%;
+                                background-color: white;
+                                padding: 3% 3%;
+                                border: 1px solid white;
+                                font-size: 1em;
+                                border-radius:20px;
+                            }
+                        }
+                    }
+    
+                    .banner-notify{
+                        padding: 2%;
+    
+                        a{
+                            text-decoration: none;
+                            background-color: rgb(254, 118, 7);
+                            color: white;
+                            padding: 1.2% 4%;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+    
+        }
+
+        
+    }
+
+
+    
+}
+
+
+// responsive
+
+@media(min-width:320px){
+    *{
+        .banner-section{
+            .banner-container{
+                .banner-head{
+                    .banner-open-bar{
+                        .banner-navbar{
+                            width: 70%;
+                        }
+                    }
+                }
+                .banner-row{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:660px){
+    *{
+        .banner-section{
+            .banner-container{
+                .banner-head{
+                    .banner-open-bar{
+                        .banner-navbar{
+                            width: 40%;
+                        }
+                    }
+                }
+                .banner-row{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(min-width:1000px){
+    *{
+        .banner-section{
+            .banner-container{
+                .banner-head{
+                    .banner-open-bar{
+                        .banner-navbar{
+                            width: 20%;
+                        }
+                    }
+                }
+                .banner-row{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

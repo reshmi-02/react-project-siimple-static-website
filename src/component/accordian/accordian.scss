@@ -1,0 +1,112 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+    .accordian-section{
+        padding: 5% 0%;
+        width: 100%;
+        .accordian-heading {
+            text-align: center;
+            font-size: 2em;
+            color: rgb(123, 122, 122);
+        }
+
+        .accordian-lines {
+            display: flex;
+            justify-content: center;
+            padding: 1% 0%;
+
+            .accordian-lines-color {
+                width: 6%;
+                height: 2px;
+                background-color: rgb(255, 139, 7);
+            }
+        }
+        .accordian-container{
+            padding-top: 3%;
+            // width: 80%;
+            margin: auto;
+            .accordian-row{
+                .accordian-content{
+                    padding: 2% 0%;
+                    width: 100%;
+                    border-bottom: 1px solid silver;
+                    .accordian-head{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .accordian-para1{
+                            color: rgb(108, 106, 106);
+                            font-size: 1.2em;
+                        }
+                        .icon1{
+                            font-size: 1.2em;
+                        }
+                        .icon2{
+                            display: none;
+                            font-size: 1.2em;
+                        }
+                        
+                    }
+                    
+                    .accordian-para2{
+                        display: none;
+                        padding: 2% 0%;
+                        color: rgb(108, 106, 106);
+                        font-size: 1.2em;
+                    }
+                    
+                }
+                .accordian-content:hover .accordian-para2{
+                    display: block;
+                }
+                .accordian-content:hover .accordian-para1{
+                    color: rgb(255, 139, 7)
+                }
+                .accordian-content:hover .icon1{
+                    display: none;
+                    color: rgb(255, 139, 7);
+                }
+                .accordian-content:hover .icon2{
+                    display: block;
+                    color: rgb(255, 139, 7);
+                }
+
+                .accordian-content:hover h4{
+                    color: rgb(255, 139, 7);
+                }
+            }
+        }
+    }
+}
+
+
+// responsive
+
+@media(min-width:320px){
+    .accordian-section{
+        .accordian-container{
+            width: 90%;
+        }
+    }
+}
+
+
+@media(min-width:320px){
+    .accordian-section{
+        .accordian-container{
+            width: 90%;
+        }
+    }
+}
+
+
+
+@media(min-width:320px){
+    .accordian-section{
+        .accordian-container{
+            width: 80%;
+        }
+    }
+}
